@@ -1,11 +1,17 @@
-import { motion } from "framer-motion";
+/* eslint-disable react/no-unescaped-entities */
+import { motion, useScroll } from "framer-motion";
 import React from "react";
 import SectionHeading from "./section-heading";
 
 export default function About() {
+  useScroll({
+    target: "",
+    offset: ["0 1", "1.33 1"],
+  });
+
   return (
     <motion.section
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-5 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -29,8 +35,8 @@ export default function About() {
         </span>
         . I am also familiar with TypeScript and Python. I am always looking to
         learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a Junior
-        software developer.
+        <span className="font-medium underline">full-time position</span> as a
+        Junior software developer.
       </p>
 
       <p>
