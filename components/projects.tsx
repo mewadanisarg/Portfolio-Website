@@ -1,8 +1,7 @@
 import { projectsData } from "@/lib/data";
-import React, { useRef } from "react";
+import React from "react";
 import SectionHeading from "./section-heading";
-import Image from "next/image";
-import { useScroll } from "framer-motion";
+import Project from "./project";
 
 export default function Projects() {
   return (

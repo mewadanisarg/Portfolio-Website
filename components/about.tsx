@@ -4,17 +4,13 @@ import React from "react";
 import SectionHeading from "./section-heading";
 
 export default function About() {
-  useScroll({
-    target: "",
-    offset: ["0 1", "1.33 1"],
-  });
-
   return (
     <motion.section
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-5 scroll-mt-28"
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-5 scroll-mt-28 "
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
+      id="about"
     >
       <SectionHeading>About me</SectionHeading>
 

@@ -13,7 +13,10 @@ import { FaSquareXing } from "react-icons/fa6";
 
 export default function Intro() {
   return (
-    <section>
+    <section
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      id="home"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
