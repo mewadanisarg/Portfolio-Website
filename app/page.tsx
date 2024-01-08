@@ -1,5 +1,6 @@
 "use client";
 import About from "@/components/about";
+import Experince from "@/components/experience";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
@@ -15,6 +16,8 @@ export default function Home() {
       <Projects />
       <SectionDivider />
       <Skills />
+      <SectionDivider />
+      <Experince />
     </main>
   );
 }

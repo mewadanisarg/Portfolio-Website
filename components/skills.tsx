@@ -15,7 +15,7 @@ const fadeInAnimationVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.05 * index,
+      delay: 0.08 * index,
     },
   }),
 };
@@ -37,9 +37,9 @@ export default function Skills() {
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
-            whileInView="animate"
+            whileInView="animate" //It will only animate when in viewport
             viewport={{
-              once: true,
+              once: true, //Animate only once when the viewport changes
             }}
             custom={index}
           >

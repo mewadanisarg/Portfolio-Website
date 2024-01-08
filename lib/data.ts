@@ -2,9 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { FaMicrosoft } from "react-icons/fa6";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import { LogoAngular } from "@carbon/icons-react";
 
 export const links = [
   {
@@ -35,28 +37,44 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Masters in International Business and Engineer",
+    location: "Hamm, DE",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated after 2 years of studying. After finishing my master studies I was learning and developer web-apps.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2018 - 2020",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Graduated bootcamp",
+    location: "Berlin, DE",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I graduated from Spiced Academy after 3 months of studying. I immediately found an Intership as a front-end developer.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2021",
+  },
+  {
+    title: "Intern Web-Developer",
+    location: "Essen, DE",
+    description:
+      "I worked as a webdeveloper at Impact Technology GmbH. Learned and developed PHP website for the client. My Tech-stack was PHP, MySQL, HTML, CSS, Bootstrap.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2021 - 2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Technical Support Engineer",
+    location: "Berlin, DEL",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I worked as a Technical Support Engineer for 13 months at Microsoft Deutschland GmbH",
+    icon: React.createElement(FaMicrosoft),
+    date: "2022 - 2023",
+  },
+  {
+    title: "Junior Software Engineer",
+    location: "Berlin, DE",
+    description:
+      "I was working as Junior Software Engineer at Prostep AG. My stack includes Angular, TypeScript, SCSS, Storybook, Docker and MongoDB. I'm open to full-time opportunities.",
+    icon: React.createElement(LogoAngular),
+    date: "2023 - 2023",
   },
 ] as const;
 
