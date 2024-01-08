@@ -1,5 +1,6 @@
 "use client";
 import About from "@/components/about";
+import Contact from "@/components/contact";
 import Experince from "@/components/experience";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
@@ -18,6 +19,7 @@ export default function Home() {
       <Skills />
       <SectionDivider />
       <Experince />
+      <Contact />
     </main>
   );
 }
