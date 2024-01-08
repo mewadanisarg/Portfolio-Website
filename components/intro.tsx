@@ -1,20 +1,33 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaSquareXing } from "react-icons/fa6";
-//import { useSectionInView } from "@/lib/hooks";
-//import { useActiveSectionContext } from "@/context/active-section-context";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useInView } from "react-intersection-observer";
 
 export default function Intro() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveSection } = useActiveSectionContext();
+  console.log(inView);
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView, setActiveSection]);
+
   return (
     <section
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      ref={ref}
+      className="mb-28 max-w-[50rem] text-center sm:mb-[15rem] scroll-mt-[100rem]"
       id="home"
     >
       <div className="flex items-center justify-center">
