@@ -6,7 +6,8 @@
     "axe/name-role-value": [
       "default",
       {
-        "link-name": "off"
+        "link-name": "off",
+        "button-name": "off"
       }
     ],
     "disown-opener": "off",
@@ -25,6 +26,7 @@
           "-webkit-tap-highlight-color"
         ]
       }
-    ]
+    ],
+    "button-type": "off"
   }
 }
