@@ -32,7 +32,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/photo.jpg"
+              src="/Photo.jpg"
               alt="Nisarg Potrait"
               width="150"
               height="150"
