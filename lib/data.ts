@@ -37,7 +37,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Masters in International Business and Engineer",
+    title: "Masters in International Business and Engineering",
     location: "Hamm, DE",
     description:
       "I graduated after 2 years of studying. After finishing my master studies I was learning and developer web-apps.",
@@ -61,7 +61,7 @@ export const experiencesData = [
     date: "2021 - 2021",
   },
   {
-    title: "Technical Support Engineer",
+    title: "Technical Support Engineer at Microsoft",
     location: "Berlin, DEL",
     description:
       "I worked as a Technical Support Engineer for 13 months at Microsoft Deutschland GmbH",
