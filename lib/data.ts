@@ -5,7 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import { FaMicrosoft } from "react-icons/fa6";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import nisargPersonalPortfolio from "@/public/Nisarg-Personal-Portfolio.png";
+import socialNetworkProject from "@/public/social-network-project.png";
 import { LogoAngular } from "@carbon/icons-react";
 
 export const links = [
@@ -80,11 +81,11 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Car Buddies",
+    title: "Social Network Project",
     description:
       "I worked as a full-stack developer on this final project for final presentation. Users can connect with similar in car Brand and Model.",
     tags: ["React", "Node.js", "Express.js", "PostgreSQL", "Tailwind", "Redux"],
-    imageUrl: corpcommentImg,
+    imageUrl: socialNetworkProject,
   },
   {
     title: "Nature's Art",
@@ -98,7 +99,7 @@ export const projectsData = [
     description:
       "A Personal Portfolio to respresent my skills and experience to the companies",
     tags: ["React", "Next.js", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: nisargPersonalPortfolio,
   },
 ] as const;
 

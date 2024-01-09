@@ -11,14 +11,15 @@ import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 
-export default function Experince() {
+export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
+
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My experience & Education</SectionHeading>
-      <VerticalTimeline>
-        {experiencesData.map((experinceItem, index) => (
+      <SectionHeading>My education & experience</SectionHeading>
+      <VerticalTimeline lineColor="">
+        {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
@@ -35,21 +36,19 @@ export default function Experince() {
                     ? "0.4rem solid #9ca3af"
                     : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
-              visible={true} // if we not use visible properties, we cannnot see the timeline element
-              date={experinceItem.date}
-              icon={experinceItem.icon}
+              visible={true}
+              date={item.date}
+              icon={item.icon}
               iconStyle={{
-                border:
+                background:
                   theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className=" font-semibold capitalize ">
-                {experinceItem.title}
-              </h3>
-              <p className=" font-normal !mt-0 ">{experinceItem.location}</p>
-              <p className=" !font-normal !mt-1 text-gray-750 ">
-                {experinceItem.description}
+              <h3 className="font-semibold capitalize">{item.title}</h3>
+              <p className="font-normal !mt-0">{item.location}</p>
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+                {item.description}
               </p>
             </VerticalTimelineElement>
           </React.Fragment>
