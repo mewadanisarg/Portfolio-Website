@@ -6,6 +6,7 @@ import { FaMicrosoft } from "react-icons/fa6";
 import rmtdevImg from "@/public/rmtdev.png";
 import nisargPersonalPortfolio from "@/public/Nisarg-Personal-Portfolio.png";
 import socialNetworkProject from "@/public/social-network-project.png";
+import naturesArt from "@/public/Nature's Art.png";
 import { LogoAngular } from "@carbon/icons-react";
 
 export const links = [
@@ -91,7 +92,7 @@ export const projectsData = [
     description:
       "Image board for nature love. It has features like uploading files, pagination and commenting.",
     tags: ["Vue.js", "Node.js", "PostgreSQL", "Tailwind"],
-    imageUrl: rmtdevImg,
+    imageUrl: naturesArt,
   },
   {
     title: "Personal Portfolio",
